@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Simple Git Push Script
+# Git Push Script
 # Usage: ./gitpush.sh "commit message"
 
 # Check if commit message is provided
@@ -43,9 +43,9 @@ git push
 
 # Check if push was successful
 if [ $? -eq 0 ]; then
-    echo "\n✓ Successfully pushed to remote repository!"
+    echo "\n Successfully pushed to remote repository!"
 else
-    echo "\n✗ Push failed. You may need to pull first or set upstream branch."
+    echo "\n Push failed. You may need to pull first or set upstream branch."
     echo "Try: git push --set-upstream origin <branch-name>"
     exit 1
 fi
